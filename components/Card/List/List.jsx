@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import React from "react";
 
-export default function List({ url, title, artist, year, soldout }) {
+export default function List({ url, title, artist, year, soldout, album }) {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={{ uri: url }} />
@@ -11,6 +11,7 @@ export default function List({ url, title, artist, year, soldout }) {
         <View style={styles.contentContainer}>
           <Text style={styles.artist}>{artist}</Text>
           <Text style={styles.year}>{year}</Text>
+          <Text style={styles.album}>{album}</Text>
         </View>
         <View style={styles.soldoutContainer}>
           {soldout && <Text style={styles.soldout}>TÜKENDİ</Text>}
@@ -63,5 +64,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     color: "red",
     borderRadius: 4,
+  },
+  album: {
+    fontWeight: "300",
+    fontSize: 10,
   },
 });

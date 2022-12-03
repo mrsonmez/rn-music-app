@@ -12,6 +12,7 @@ export default function Card() {
         artist={item.artist}
         title={item.title}
         year={item.year}
+        album={item.album}
       />
     );
   };
