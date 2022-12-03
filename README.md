@@ -1,3 +1,5 @@
+![musicapp](./musicapp.png)
+
 ## About
 
 This project is Music App in react-native with redux
